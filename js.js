@@ -86,6 +86,7 @@ function visByer() {
       const klon = byTemplate.cloneNode(true).content;
       klon.querySelector(".template_bynavn").textContent = attractions.navne;
       klon.querySelector(".template_img").src = "images/" + attractions.billede;
+      klon.querySelector(".template_p").textContent = "Klik for at læse mere";
       klon
         .querySelector(".template_article")
         .addEventListener("click", () => visBy(attractions));

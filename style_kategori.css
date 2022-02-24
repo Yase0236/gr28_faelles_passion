@@ -107,13 +107,11 @@
   width: 85%;
 }
 
-.template_article {
-  border-radius: 5px;
+.template_p {
   text-align: center;
-  margin: 20px;
-  font-size: 15px;
-  font-family: "poppins", sans-serif;
   color: var(--clr-primary1);
+  font-family: var(--ff-p);
+  padding-top: 0.5rem;
 }
 
 .template_img {
@@ -124,7 +122,8 @@
   transition: 0.3s ease;
 }
 
-.template_img:hover {
+.template_img:hover,
+.template_p {
   width: 100%;
   opacity: 0.7;
 }
@@ -134,12 +133,14 @@
 }
 
 .template_bynavn {
+  text-align: center;
   font-family: var(--ff-p);
   color: var(--clr-primary2);
   font-size: 1.2rem;
   font-size: 1rem;
   padding-bottom: 1rem;
 }
+
 /*************pop-up window*********************/
 #modal {
   width: 100vw;
