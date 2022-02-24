@@ -154,23 +154,17 @@ ul {
 .footer_grid {
   display: flex;
   gap: 1rem;
+  padding: 1rem;
 }
 
-/* .footer_grid > * {
+.footer_grid > * {
   flex-basis: 100%;
-} */
+}
 
 ul {
   list-style: none;
 }
 
 .nav_icons {
-  display: flex;
-  /* flex-direction: row; */
-  grid-row: 4;
-  grid-column: 5;
-  /* gap: 1rem; */
-  max-width: 30%;
-  /* margin-top: 25px; */
   cursor: pointer;
 }
