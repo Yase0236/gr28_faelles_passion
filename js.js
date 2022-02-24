@@ -53,7 +53,7 @@ function start() {
 function filtrerByer() {
   console.log(this);
 
-  filter = this.dataset.by;
+  filter = this.dataset.kategori;
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
@@ -79,7 +79,7 @@ function visByer() {
   container.textContent = "";
 
   attraktioner.forEach((attractions) => {
-    if (filter == attractions.by || filter == "alle") {
+    if (filter == attractions.kategori || filter == "alle") {
       const klon = byTemplate.cloneNode(true).content;
       klon.querySelector(".template_bynavn").textContent = attractions.navne;
       klon.querySelector(".template_img").src = "images/" + attractions.billede;

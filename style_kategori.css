@@ -108,10 +108,8 @@
 }
 
 .template_p {
-  text-align: center;
-  color: var(--clr-primary1);
-  font-family: var(--ff-p);
-  padding-top: 0.5rem;
+  position: absolute;
+  display: none;
 }
 
 .template_img {
@@ -122,10 +120,20 @@
   transition: 0.3s ease;
 }
 
-.template_img:hover,
-.template_p {
+.template_img:hover {
   width: 100%;
   opacity: 0.7;
+}
+
+.template_img:hover + .template_p {
+  transform: translateY(-470%) translateX(50%);
+  transition: 0.3s ease;
+  padding: 0.5rem;
+  background-color: var(--clr-secondary2);
+  display: block;
+  text-align: center;
+  color: var(--clr-primary1);
+  font-family: var(--ff-p);
 }
 
 .container {
