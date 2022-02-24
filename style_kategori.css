@@ -176,19 +176,22 @@
 }
 
 .modal_upper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .modal_bynavn {
   font-family: var(--ff-p);
   color: var(--clr-primary1);
   font-size: 2rem;
+  grid-column: 1;
 }
 
 .luk_knap {
-  width: 8%;
+  width: 50%;
   cursor: pointer;
   background: transparent;
+  grid-column: 4;
 }
 
 .modal_hr {
