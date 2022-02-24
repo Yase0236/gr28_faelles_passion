@@ -224,13 +224,11 @@
 }
 
 .paragraf {
-  grid-column: 2;
   font-family: var(--ff-p);
   line-height: 35px;
 }
 
 .adresse {
-  grid-column: 2;
   font-family: var(--ff-p);
   padding-top: 1rem;
   font-family: "Zen Kurenaido", monospace;

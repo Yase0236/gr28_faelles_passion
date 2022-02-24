@@ -19,13 +19,8 @@ p {
   width: 100%;
 }
 
-.first_h1,
-.first_h2,
-.second_h2,
-.fourth_h2,
-.fifth_h2,
-.sixth_h2,
-.seventh_h2 {
+h1,
+.h2 {
   text-align: center;
   padding-top: 7rem;
 }
@@ -34,13 +29,8 @@ p {
   font-size: 3rem;
 }
 
-.first_h2,
-.second_h2,
-.third_h2,
-.fourth_h2,
-.fifth_h2,
-.sixth_h2,
-.seventh_h2 {
+.h2,
+.third_h2 {
   font-size: 5rem;
 }
 
