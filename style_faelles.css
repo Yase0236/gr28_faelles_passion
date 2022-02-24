@@ -3,7 +3,7 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
+/***********the different colors used on the entire site****************/
 :root {
   --clr-primary1: #962619;
   --clr-primary2: #0b2f6c;
@@ -154,4 +154,5 @@ ul {
   display: flex;
   max-width: 30%;
   margin-top: 25px;
+  cursor: pointer;
 }

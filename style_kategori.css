@@ -99,7 +99,7 @@
   background-color: var(--clr-primary1);
   color: var(--clr-accent);
 }
-
+/*********All the pictures of the different attractions***************/
 #kategori_second_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -140,7 +140,7 @@
   font-size: 1rem;
   padding-bottom: 1rem;
 }
-
+/*************pop-up window*********************/
 #modal {
   width: 100vw;
   height: 100vh;
@@ -247,7 +247,7 @@
   color: var(--clr-primary2);
   padding-top: 2rem;
 }
-
+/**************icons in the footer****************/
 ul {
   list-style: none;
 }
@@ -259,4 +259,5 @@ ul {
   display: flex;
   max-width: 30%;
   margin-top: 25px;
+  cursor: pointer;
 }

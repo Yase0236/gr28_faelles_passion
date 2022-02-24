@@ -1,3 +1,4 @@
+/********background image with graphics***********/
 #index_first_section {
   width: 100%;
   padding-top: 2rem;
@@ -9,7 +10,7 @@
 .index_75 {
   width: 75%;
 }
-
+/***********h1+h2 with logo********/
 .index_first_section_wrapper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -51,7 +52,7 @@ h3 {
 .h3_span {
   color: var(--clr-primary1);
 }
-
+/*******************splashbillede***************/
 #index_second_section {
   background-image: url(images/max-adulyanukosol-PV2trXWZODQ-unsplash.jpg);
   background-size: cover;
