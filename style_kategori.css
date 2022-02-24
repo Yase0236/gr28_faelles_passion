@@ -89,15 +89,15 @@
   cursor: pointer;
   font-family: var(--ff-p);
   transition: 0.2s ease;
+  font-size: 1.2rem;
 }
 
 .filtrer_by:hover {
-  color: var(--clr-accent);
+  text-decoration: underline;
 }
 
 .valgt {
-  background-color: var(--clr-primary1);
-  color: var(--clr-accent);
+  text-decoration: underline;
 }
 /*********All the pictures of the different attractions***************/
 #kategori_second_section {

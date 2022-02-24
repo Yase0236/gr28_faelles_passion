@@ -3,6 +3,7 @@
   padding: 0%;
   box-sizing: border-box;
 }
+
 /***********the different colors used on the entire site****************/
 :root {
   --clr-primary1: #962619;
@@ -26,29 +27,34 @@ img {
   display: block;
 }
 
+hr {
+  color: var(--clr-secondary3);
+}
+
 @media (min-width: 800px) {
   .nav {
     display: flex;
-    /* background-color: var(--clr-secondary4); */
+    gap: 1rem;
   }
 }
 
 .nav {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 nav a {
   cursor: pointer;
   transition: 0.2s ease;
   font-family: var(--ff-p);
-  padding: 1rem;
+  /* padding: 1rem; */
   color: var(--clr-primary2);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
+
 .toggle-btn {
   display: none;
   list-style: none;
@@ -107,9 +113,14 @@ nav.shown .menu_logo {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    padding-bottom: 1rem;
   }
 
   .nav a {
+    color: var(--clr-secondary1);
+  }
+
+  .filtrer_by {
     color: var(--clr-secondary1);
   }
 
@@ -124,7 +135,7 @@ footer {
   font-family: var(--ff-p);
   color: var(--clr-primary2);
   list-style: none;
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .nav,
