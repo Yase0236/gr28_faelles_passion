@@ -53,7 +53,7 @@ function start() {
 function filtrerByer() {
   console.log(this);
 
-  filter = this.dataset.kategori;
+  filter = this.dataset.by;
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
@@ -78,11 +78,8 @@ function visByer() {
   const byTemplate = document.querySelector("#template_byer");
   container.textContent = "";
 
-  // const byKategoritekst = document.querySelector(".skift_kategoritekst");
-  // byKategoritekst.textContent = attractions.byKategoritekst;
-
   attraktioner.forEach((attractions) => {
-    if (filter == attractions.kategori || filter == "alle") {
+    if (filter == attractions.by || filter == "alle") {
       const klon = byTemplate.cloneNode(true).content;
       klon.querySelector(".template_bynavn").textContent = attractions.navne;
       klon.querySelector(".template_img").src = "images/" + attractions.billede;

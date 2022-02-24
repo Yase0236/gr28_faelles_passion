@@ -165,11 +165,12 @@ ul {
 }
 
 .nav_icons {
+  display: flex;
+  /* flex-direction: row; */
   grid-row: 4;
   grid-column: 5;
-  gap: 20px;
-  display: flex;
+  /* gap: 1rem; */
   max-width: 30%;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   cursor: pointer;
 }
