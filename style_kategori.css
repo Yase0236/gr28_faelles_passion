@@ -186,6 +186,10 @@
   color: var(--clr-secondary3);
 }
 
+.modal p {
+  color: var(--clr-primary2);
+}
+
 .modal_lower {
   margin-top: 2rem;
   display: flex;
@@ -196,10 +200,16 @@
   flex-basis: 100%;
 }
 
-.modal_img {
+.modal_img_01 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   width: 80%;
+}
+
+.modal_img_02 {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 15%;
 }
 
 @media (max-width: 800px) {
@@ -208,7 +218,7 @@
     gap: 2rem;
   }
 
-  .modal_img {
+  .modal_img_01 {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 50%;
@@ -225,7 +235,7 @@
 
 .paragraf {
   font-family: var(--ff-p);
-  line-height: 35px;
+  color: var(--clr-primary2);
 }
 
 .adresse {

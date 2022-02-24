@@ -95,14 +95,13 @@ function visByer() {
 }
 
 function visBy(attractions) {
-  // const modal = document.querySelector("#modal");
   console.log(attractions);
 
   modal.querySelector(".modal_bynavn").textContent = attractions.navne;
   modal.querySelector(".luk_knap").src = "images/ikoner/lukpopup.svg";
-  modal.querySelector(".modal_img").src = "images/" + attractions.billede;
-  // modal.querySelector(".bynavn_overskrift").textContent =
-  //   attractions.byoverskrift;
+  modal.querySelector(".modal_img_01").src = "images/" + attractions.billede;
+  modal.querySelector(".maps_link").href = attractions.lokation;
+  modal.querySelector(".modal_img_02").src = "images/ikoner/location.svg";
   modal.querySelector(".paragraf").textContent = attractions.paragraf;
   modal.querySelector(".adresse").textContent = attractions.adresse;
   modal.style.display = "block";
