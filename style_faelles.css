@@ -142,3 +142,16 @@ ul {
 /* .footer_grid > * {
   flex-basis: 100%;
 } */
+
+ul {
+  list-style: none;
+}
+
+.nav_icons {
+  grid-row: 4;
+  grid-column: 5;
+  gap: 20px;
+  display: flex;
+  max-width: 30%;
+  margin-top: 25px;
+}
