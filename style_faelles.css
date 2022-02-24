@@ -101,7 +101,7 @@ nav.shown .menu_logo {
   }
 
   #banner_mobile img {
-    width: 50%;
+    width: 25%;
   }
 
   #banner_mobile > * {
@@ -126,6 +126,12 @@ nav.shown .menu_logo {
 
   .footer_grid {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #banner_mobile img {
+    width: 50%;
   }
 }
 
