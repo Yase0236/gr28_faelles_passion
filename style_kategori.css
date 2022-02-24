@@ -36,6 +36,7 @@
 }
 
 @media (max-width: 600px) {
+  /* logoet fjernes her, da den alligevel vises i nav'en */
   .logo_grid {
     display: none;
   }
@@ -57,6 +58,7 @@
     gap: 1rem;
   }
 
+  /* baggrundsbilledet fjernes for at skabe et mindre rodet site ved mindre skærmstørrelse */
   #kategori_first_section {
     background-image: none;
     margin-bottom: 2rem;
@@ -83,6 +85,7 @@
   }
 }
 
+/* knapperne til filtering af byerne */
 .filtrer_by {
   text-align: center;
   color: var(--clr-primary2);
@@ -99,7 +102,8 @@
 .valgt {
   text-decoration: underline;
 }
-/*********All the pictures of the different attractions***************/
+
+/* med auto-fit vil artiklerne være minimum 18rem, og hvis der er plads til det, udvider de sig til 1fr */
 #kategori_second_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -107,11 +111,13 @@
   width: 85%;
 }
 
+/* paragraffen vises ikke, da den kun skal bruges til hover-funktionen over et billede */
 .template_p {
   position: absolute;
   display: none;
 }
 
+/* width på 98%, da billedet udvider sig til 100% ved hover */
 .template_img {
   width: 98%;
   aspect-ratio: 1 / 1;
@@ -125,6 +131,8 @@
   opacity: 0.7;
 }
 
+/* da der i forvejen er position absolute, vil paragraffen ved hjælp af transform x & y
+placere sig i midten af billedet, hvor display block gør, at den vises */
 .template_img:hover + .template_p {
   transform: translateY(-470%) translateX(50%);
   transition: 0.3s ease;
@@ -149,7 +157,7 @@
   padding-bottom: 1rem;
 }
 
-/*************pop-up window*********************/
+/* z-index på 2 for at være foran nav, hvis vi senere ville gøre den sticky */
 #modal {
   width: 100vw;
   height: 100vh;
@@ -171,6 +179,7 @@
   padding-bottom: 2rem;
 }
 
+/* ved ikke at fylde hele skærmen kan man se den 0.8 opacity der er givet til modal */
 .modal_attraktion_boks {
   width: 70vw;
 }
@@ -208,6 +217,7 @@
   gap: 2.5rem;
 }
 
+/* med flex-basis 100% fylder billedet og paragraffen lige meget i modalen */
 .modal_lower > * {
   flex-basis: 100%;
 }
@@ -225,6 +235,7 @@
 }
 
 @media (max-width: 800px) {
+  /* flex-direction: ændres i mobil-versioen for at gøre single-view mere overskueligt; */
   .modal_lower {
     flex-direction: column;
     gap: 2rem;
@@ -268,17 +279,7 @@
   color: var(--clr-primary2);
   padding-top: 2rem;
 }
-/**************icons in the footer****************/
+
 ul {
   list-style: none;
-}
-
-.nav_icons {
-  grid-row: 4;
-  grid-column: 5;
-  gap: 20px;
-  display: flex;
-  max-width: 30%;
-  margin-top: 25px;
-  cursor: pointer;
 }

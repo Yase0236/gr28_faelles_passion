@@ -17,6 +17,8 @@
   </head>
   <body>
     <header class="banner">
+      <!-- Banner mobile har display none, og den bliver brugt til mobil-versionen, 
+        hvor den ved hjælp af display block vises frem -->
       <div id="banner_mobile">
         <div>
           <img
@@ -64,6 +66,7 @@
       </nav>
     </header>
     <main>
+      <!-- første sektion laves på nogenlunde samme måde som i index_html -->
       <section id="kategori_first_section">
         <div>
           <div class="kategori_first_section_wrapper">
@@ -74,6 +77,8 @@
             <h2 class="h2_skift">ALLE BYDELE</h2>
           </div>
           <hr class="katetogi_first_section_hr" />
+          <!-- classen skift_kategoritekst bruges ved hjælp af display none og block til at
+          vise kategoriteksten ved klik på hver enkelte bydel -->
           <p class="skift_kategoritekst">
             <span class="alle hide"
               >København er Danmarks hovedstad og er med ca. 1.340.000
@@ -135,6 +140,7 @@
 
       <section id="kategori_second_section"></section>
 
+      <!-- Template bliver brugt til at lave en artikel om hvert enkelt element fra restdb -->
       <template id="template_byer">
         <article class="template_article">
           <h3 class="template_bynavn"></h3>
@@ -143,6 +149,7 @@
         </article>
       </template>
 
+      <!-- modal bruges til single-view -->
       <aside id="modal">
         <article class="modal_attraktion">
           <div class="modal_attraktion_boks">
@@ -190,12 +197,27 @@
           </ul>
         </div>
         <div class="nav_icons">
-          <img
-            src="/images/ikoner/instagram.svg"
-            class="icons"
-            alt="instagram"
-          />
-          <img src="/images/ikoner/facebook.svg" class="icons" alt="facebook" />
+          <a href="index.html">
+            <img class="icons" src="images/ikoner/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="nav_icons">
+          <a href="index.html" target="_blank">
+            <img
+              src="/images/ikoner/instagram.svg"
+              class="icons"
+              alt="instagram"
+            />
+          </a>
+        </div>
+        <div class="nav_icons">
+          <a href="index.html" target="_blank">
+            <img
+              src="/images/ikoner/facebook.svg"
+              class="icons"
+              alt="facebook"
+            />
+          </a>
         </div>
       </div>
     </footer>

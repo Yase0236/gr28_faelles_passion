@@ -59,15 +59,18 @@ function filtrerByer() {
 
   console.log(filter);
 
+  // kategoriteksten for hver by skjules, og først ved klik på by-knap vises de frem
   let kategoritekster = document.querySelectorAll(".skift_kategoritekst span");
   kategoritekster.forEach((kategoritekst) => {
     kategoritekst.classList.add("hide");
   });
 
+  // ved tryk på by-knap skiftes kategoriteksten til valgte bynavn
   document.querySelector(`.${filter}`).classList.remove("hide");
 
   visByer();
 
+  // ved tryk på by-knap skifter overskriften til valgte bynavn
   header.textContent = this.textContent;
 }
 

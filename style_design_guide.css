@@ -1,3 +1,8 @@
+/* i dette stylesheet handler størstedelen om et grid pr. sektion, 
+og hvor alle børnene i griddet placeres. Ved mindre skærmstørrelse bruges
+mediaquery nederst i stylesheetet til at konfigurere børnene anderledes og 
+ændre skriftstørrelserne */
+
 h1,
 h2,
 h3 {
@@ -142,6 +147,7 @@ h1,
 }
 
 .farve {
+  /* ved hjælp af border-radius gøres hver farve rund */
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
@@ -166,6 +172,7 @@ h1,
 }
 
 .creme {
+  /* border bruges blot til at vise farven, da den har samme farvekode som body */
   grid-column: 5;
   grid-row: 2;
   background-color: var(--clr-secondary2);
@@ -267,6 +274,7 @@ h1,
 }
 
 @media (max-width: 900px) {
+  /* baggrundsbilledet fjernes ved mindre skærmstørrelse for at gøre sitet mindre rodet */
   .design_section {
     background-image: none;
   }

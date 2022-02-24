@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/***********the different colors used on the entire site****************/
+/* custom properties til at gøre kodningen lettere */
 :root {
   --clr-primary1: #962619;
   --clr-primary2: #0b2f6c;
@@ -13,7 +13,6 @@
   --clr-secondary3: #265127;
   --clr-secondary4: #c6a77d;
 
-  --clr-accent: snow;
   --ff-h: "permanent marker", sans-serif;
   --ff-p: "poppins", sans-serif;
 }
@@ -55,6 +54,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* mobil-versionen vises ikke før i mindre skærmstørrelse */
 .toggle-btn {
   display: none;
   list-style: none;
@@ -64,6 +64,7 @@ nav.shown .menu_logo {
   display: none;
 }
 
+/* i tilfælde af vi ville gøre navigationen sticky */
 /* .banner {
   position: sticky;
   top: 0;
