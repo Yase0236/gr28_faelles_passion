@@ -12,6 +12,10 @@ p {
   font-family: var(--ff-p);
 }
 
+.design_hr {
+  color: var(--clr-secondary3);
+}
+
 .design_section {
   background-image: url(images/grafisk/Billede_grafiske_elementer.svg);
   background-size: cover;
