@@ -139,6 +139,6 @@ ul {
   gap: 1rem;
 }
 
-.footer_grid > * {
+/* .footer_grid > * {
   flex-basis: 100%;
-}
+} */
