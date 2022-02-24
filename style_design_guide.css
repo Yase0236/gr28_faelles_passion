@@ -5,6 +5,10 @@ h3 {
   color: var(--clr-primary2);
 }
 
+p {
+  color: var(--clr-primary2);
+}
+
 h3,
 h4,
 h5,
@@ -45,7 +49,7 @@ h1,
   grid-column: 2 / 4;
   grid-row: 2;
   font-size: 1.5rem;
-  color: var(--clr-primary2);
+  color: var(--clr-primary1);
 }
 
 .second_p_01 {
@@ -60,7 +64,6 @@ h1,
 
 .second_p_style {
   font-size: 1.3rem;
-  color: var(--clr-primary2);
 }
 
 .second_p_03 {
@@ -117,6 +120,7 @@ h1,
   text-align: center;
   font-size: 2rem;
   padding-bottom: 2rem;
+  color: var(--clr-primary1);
 }
 
 .fourth_h4_01 {
@@ -186,17 +190,16 @@ h1,
 
 .fifth_h3_02 {
   grid-column: 1 / 6;
-  grid-row: 2;
-  font-size: 3rem;
-  color: var(--clr-primary2);
-}
-
-.fifth_p {
-  grid-column: 1 / 6;
   grid-row: 3;
   font-size: 3rem;
   color: var(--clr-primary2);
   font-family: var(--ff-h);
+}
+
+.fifth_p {
+  grid-column: 1 / 6;
+  grid-row: 2;
+  font-size: 3rem;
 }
 
 .design_sixth_section_wrapper {
@@ -218,7 +221,6 @@ h1,
   max-width: 60ch;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: var(--clr-primary2);
 }
 
 .design_seventh_section_wrapper {
@@ -232,7 +234,6 @@ h1,
   grid-column: 2;
   grid-row: 1;
   max-width: 60ch;
-  color: var(--clr-primary2);
 }
 
 .seventh_img_01 {
