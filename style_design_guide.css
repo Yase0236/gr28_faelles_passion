@@ -1,0 +1,43 @@
+h1,
+h2 {
+  font-family: var(--ff-h);
+}
+
+h3,
+h4,
+h5,
+p {
+  font-family: var(--ff-p);
+}
+
+.design_section {
+  background-image: url(images/grafisk/billede.svg);
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.first_h1,
+.first_h2 {
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.first_h1 {
+  font-size: 3rem;
+}
+
+.first_h2 {
+  font-size: 5rem;
+}
+
+.second_h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.design_second_section_wrapper {
+  display: grid;
+  grid-template-columns: 10;
+  grid-template-rows: 10;
+}
